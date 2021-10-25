@@ -15,7 +15,6 @@ Pasos para instalar y poner en marcha la aplicación
     spring.datasource.password=<Password>
 3. Poner en marcha el aplicativo
 4. Una vez en marcha el aplicativo, usar el postman y cargar el collection Reto Kruger.postman_collection.json que se encuentra en la ruta /src/main/resources/
-  ![image](https://user-images.githubusercontent.com/30761344/138662458-3fb2af97-e1a5-4e2a-8ecf-7c3c0fb8b2a8.png)
 5. Configurar el oauth para obtener el token
   ![image](https://user-images.githubusercontent.com/30761344/138662850-29ba0c67-f571-4ad9-9a72-5632020e40f8.png)
 6. Los valores para las credenciales estan en la tabla Usuario
