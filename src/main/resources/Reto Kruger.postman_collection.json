@@ -1,0 +1,237 @@
+{
+	"info": {
+		"_postman_id": "568b33d7-2d80-4844-aeaf-ec228845ad7a",
+		"name": "Reto Kruger",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzUxODI4MzksInVzZXJfbmFtZSI6ImN6YW1vcmEiLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOSVNUUkFET1IiXSwianRpIjoiOTZiZTczN2UtODE5NS00NzU1LTllMDktNWZkZmFhN2ZmZjYzIiwiY2xpZW50X2lkIjoia3J1Z2VyIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl19.zUQCPT54LXtjUe6wPF0mtTdLULdzHul-AKn4ReXbM2g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzUxMDE3NzQsInVzZXJfbmFtZSI6ImN6YW1vcmEiLCJhdXRob3JpdGllcyI6WyJST0xfQURNSU5JU1RSQURPUiJdLCJqdGkiOiIxNDFmZGE1YS1kOGE5LTQyNzQtOTQ4Yy0zMDRhZDhhZTY3YzQiLCJjbGllbnRfaWQiOiJrcnVnZXIiLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.UBp9EdVGfYyfM3L4NhcZ9wfMk-Fgl2ou_MWm7JHAYvg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fechaVacunacionInicio\":\"\",\r\n    \"fechaVacunacionHasta\":\"\",\r\n    \"tipoVacuna\":\"Sputnik\",\r\n    \"estadoVacunacion\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/empleados",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"empleados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Empleado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzUxODIxMjMsInVzZXJfbmFtZSI6ImN6YW1vcmEiLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOSVNUUkFET1IiXSwianRpIjoiNjA3ZDBjYjYtMDNmNS00YjhmLThhYzYtYTIwYWI1MjJhMjQxIiwiY2xpZW50X2lkIjoia3J1Z2VyIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl19.VQnpdWvL7j96vNVgsIYFH52B8hJpLgBsI4qZYa0bU4k",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\r\n\t\"cedula\": \"EEZZTMTETQ\",\r\n\t\"nombres\": \"RICARDO EDGAR\",\r\n\t\"apellidos\": \"AGUIRRE MENDOZA\",\r\n\t\"correoElectronico\": \"jamaral@hotmail.com\",\r\n    \"rol\":\"ROLE_ADMINISTRADOR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/empleados/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"empleados",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Empleado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzUxODQxNjksInVzZXJfbmFtZSI6ImN6YW1vcmEiLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOSVNUUkFET1IiXSwianRpIjoiMmVhYWI5NjUtNTRhYi00YTIyLTgzZmEtZGZiY2MxYWViYjAzIiwiY2xpZW50X2lkIjoia3J1Z2VyIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl19.TQpc5ye9R-NOGbphQQK3Sjy_VhFelDyM7rUI7Os4XsQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/empleados/42",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"empleados",
+						"42"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Empleado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzUxNzkyMzEsInVzZXJfbmFtZSI6ImN6YW1vcmEiLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOSVNUUkFET1IiXSwianRpIjoiMzJlNDQ4M2EtYmNlNi00ZTA2LWE1ZWItY2E5Njg4ZjZiNDQxIiwiY2xpZW50X2lkIjoia3J1Z2VyIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl19.qBYAjgZGspeAfnacaKujt7mix_YLz-7GbMpAlsegyaU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\r\n\t\"cedula\": \"EEZZTMTET9\",\r\n    \"nombres\": \"RICARDO EDGAR\",\r\n    \"apellidos\": \"AGUIRRE MENDOZA\",\r\n    \"correoElectronico\": \"jamaral@hotmail.com\",\r\n    \"direccion\": \"JR. LOS CIPRESES 435\",\r\n\t\"fechaNacimiento\": \"1991-02-14\",\r\n\t\"telefonoMovil\": \"9610859Q9\",\r\n\t\"estadoVacunacion\": \"S\",\r\n    \"vacunas\":\r\n    [\r\n        {\r\n            \"fechaVacunacion\":\"2021-06-15\",\r\n            \"tipoVacuna\": \"AstraZeneca\",\r\n            \"dosis\":1\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/empleados/42",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"empleados",
+						"42"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auth",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "kruger",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "kruger",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "czamora",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/oauth/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
