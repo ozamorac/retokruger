@@ -51,3 +51,7 @@ Criterios de aceptación:
     a. Filtrar por estado de vacunación.
     b. Filtrar por tipo de vacuna.
     c. Filtrar por rango de fecha de vacunación.
+
+    Para verificar el swagger:
+    http://localhost:8081/swagger-ui.html
+    
